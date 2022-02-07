@@ -1,0 +1,31 @@
+
+<div id="page-wraper">
+      <!-- Sidebar Menu -->
+      <div class="responsive-nav"> 
+        <i class="fa fa-bars" id="menu-toggle"></i>
+        <div id="menu" class="menu">
+          <i class="fa fa-times" id="menu-close"></i>
+          <div class="container">
+            <div class="img">
+              <a><img src="https://static.vecteezy.com/system/resources/previews/001/198/236/non_2x/diamond-png.png" alt="Corte Diamante" /></a>
+            </div>
+            <div class="author-content">
+              <h4>Proyecto SM-51</h4>
+            </div>
+            <nav class="main-nav" role="navigation">
+              <ul class="main-menu">
+                <li class="nav-item" *ngFor="let ruta of rutas">
+                    <a class="nav-link"  [routerLink]="ruta.path">
+                    {{ruta.name}}
+                    </a>
+              </ul>
+            </nav>
+            
+            <div class="copyright-text">
+              <p>Con derecho de autores</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
